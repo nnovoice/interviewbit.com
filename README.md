@@ -1,2 +1,3 @@
 # interviewbit.com
-My attempts at interviewbit.com
+This repo is for my attempts at interviewbit.com.
+
