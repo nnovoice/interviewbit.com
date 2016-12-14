@@ -36,7 +36,7 @@ vector<int> spiralOrder(const vector<vector<int> > &A) {
         --rcol;
         
         // print bot right->bot left
-        for (int i = rcol; i >= lcol; --i) {
+        for (int i = rcol; i >= lcol && m > 1; --i) {
             //cout << A[brow][i] << "\t";
             result.push_back(A[brow][i]);
         }
@@ -44,7 +44,7 @@ vector<int> spiralOrder(const vector<vector<int> > &A) {
         --brow;
         
         // print bot left->top
-        for (int i = brow; i >= trow; --i) {
+        for (int i = brow; i >= trow && n > 1; --i) {
             //cout << A[i][lcol] << "\t";
             result.push_back(A[i][lcol]);
         }
